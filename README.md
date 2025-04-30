@@ -27,6 +27,9 @@ A modern Todo application with rich features and clean UI.
   <img src="screenshots/add_todo.png" width="300" alt="Add Todo"/>
   <img src="screenshots/filter_view.png" width="300" alt="Filter View"/>
   <img src="screenshots/statistics.png" width="300" alt="Statistics"/>
+  <img src="screenshots/edit_view.png" width="300" alt="Edit Todo"/>
+  <img src="screenshots/delete_view.png" width="300" alt="View Todo"/>
+  <img src="screenshots/search_view.png" width="300" alt="Search Todo"/>
 </div>
 
 ## Features
