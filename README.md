@@ -14,3 +14,33 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+# Flutter Todo App
+
+A modern Todo application with rich features and clean UI.
+
+## Screenshots
+
+<div align="center">
+  <img src="/myfrontend/screenshots/main_view.png" width="300" alt="Main View"/>
+  <img src="/myfrontend/screenshots/add_todo.png" width="300" alt="Add Todo"/>
+  <img src="/myfrontend/screenshots/filter_view.png" width="300" alt="Filter View"/>
+  <img src="/myfrontend/screenshots/statistics.png" width="300" alt="Statistics"/>
+</div>
+
+## Features
+- ✅ Create, Read, Update, Delete todos
+- 🔍 Search functionality
+- ⭐ Priority levels (high, medium, low)
+- 📅 Due dates
+- 🔄 Filtering by status and priority
+- 📊 Statistics view
+- 💫 Modern UI with smooth animations
+- 📱 Responsive design
+
+## Getting Started
+1. Clone the repository
+2. Run `flutter pub get`
+3. Start the backend server
+4. Run `flutter run`
