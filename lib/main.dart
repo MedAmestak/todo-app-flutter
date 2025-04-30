@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:intl/date_symbol_data_custom.dart';
 import 'dart:convert';
 import 'package:intl/intl.dart';
 
@@ -386,28 +387,39 @@ class TodoScreenState extends State<TodoScreen> {
                         ),
                       ],
                     ),
-                    leading: Container(
-                      decoration: BoxDecoration(
-                        color: todo.completed
-                            ? Colors.green[100]
-                            : Colors.red[100],
-                        shape: BoxShape.circle,
-                      ),
-                      child: Checkbox(
-                        value: todo.completed,
-                        activeColor: Colors.green,
-                        checkColor: Colors.white,
-                        onChanged: (bool? value) async {
-                          todo.completed = value ?? false;
-                          await http.put(
-                            Uri.parse(
-                                'http://localhost:8080/api/todos/${todo.id}'),
-                            headers: {'Content-Type': 'application/json'},
-                            body: jsonEncode(todo.toJson()),
-                          );
-                          _fetchTodos();
-                        },
-                      ),
+                    leading: GestureDetector(
+                      onTap: () async {
+                        todo.completed = !todo.completed;
+                        await http.put(
+                          Uri.parse(
+                              'http://localhost:8080/api/todos/${todo.id}'),
+                          headers: {'Content-Type': 'application/json'},
+                          body: jsonEncode(todo.toJson()),
+                        );
+                        _fetchTodos();
+                      },
+                      child: Container(
+                          width: 24,
+                          height: 24,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: todo.completed ? Colors.green : Colors.red,
+                          ),
+                          child: todo.completed
+                              ? const Center(
+                                  child: Icon(
+                                    Icons.check,
+                                    size: 16,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              : const Center(
+                                  child: Icon(
+                                    Icons.close,
+                                    size: 16,
+                                    color: Colors.white,
+                                  ),
+                                )),
                     ),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
