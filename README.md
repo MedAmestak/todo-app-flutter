@@ -23,10 +23,10 @@ A modern Todo application with rich features and clean UI.
 ## Screenshots
 
 <div align="center">
-  <img src="/myfrontend/screenshots/main_view.png" width="300" alt="Main View"/>
-  <img src="/myfrontend/screenshots/add_todo.png" width="300" alt="Add Todo"/>
-  <img src="/myfrontend/screenshots/filter_view.png" width="300" alt="Filter View"/>
-  <img src="/myfrontend/screenshots/statistics.png" width="300" alt="Statistics"/>
+  <img src="screenshots/main_view.png" width="300" alt="Main View"/>
+  <img src="screenshots/add_todo.png" width="300" alt="Add Todo"/>
+  <img src="screenshots/filter_view.png" width="300" alt="Filter View"/>
+  <img src="screenshots/statistics.png" width="300" alt="Statistics"/>
 </div>
 
 ## Features
